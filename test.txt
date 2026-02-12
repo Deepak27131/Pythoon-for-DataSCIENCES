@@ -1,0 +1,4 @@
+This is a write operation
+This time to learn the file handling
+Thanks you for joining the session
+This is a+ writer operation
