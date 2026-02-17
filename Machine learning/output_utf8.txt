@@ -1,0 +1,110 @@
+Loading data...
+No missing values found.
+
+--- Summary Statistics ---
+                 id                           date  ...     sqft_lot15         price
+count  2.161300e+04                          21613  ...   21613.000000  2.161300e+04
+mean   4.580302e+09  2014-10-29 04:38:01.959931648  ...   12768.455652  5.401822e+05
+min    1.000102e+06            2014-05-02 00:00:00  ...     651.000000  7.500000e+04
+25%    2.123049e+09            2014-07-22 00:00:00  ...    5100.000000  3.219500e+05
+50%    3.904930e+09            2014-10-16 00:00:00  ...    7620.000000  4.500000e+05
+75%    7.308900e+09            2015-02-17 00:00:00  ...   10083.000000  6.450000e+05
+max    9.900000e+09            2015-05-27 00:00:00  ...  871200.000000  7.700000e+06
+std    2.876566e+09                            NaN  ...   27304.179631  3.673622e+05
+
+[8 rows x 21 columns]
+
+--- Data Information ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 21613 entries, 0 to 21612
+Data columns (total 21 columns):
+ #   Column         Non-Null Count  Dtype         
+---  ------         --------------  -----         
+ 0   id             21613 non-null  int64         
+ 1   date           21613 non-null  datetime64[ns]
+ 2   bedrooms       21613 non-null  int64         
+ 3   bathrooms      21613 non-null  float64       
+ 4   sqft_living    21613 non-null  int64         
+ 5   sqft_lot       21613 non-null  int64         
+ 6   floors         21613 non-null  float64       
+ 7   waterfront     21613 non-null  int64         
+ 8   view           21613 non-null  int64         
+ 9   condition      21613 non-null  int64         
+ 10  grade          21613 non-null  int64         
+ 11  sqft_above     21613 non-null  int64         
+ 12  sqft_basement  21613 non-null  int64         
+ 13  yr_built       21613 non-null  int64         
+ 14  yr_renovated   21613 non-null  int64         
+ 15  zipcode        21613 non-null  int64         
+ 16  lat            21613 non-null  float64       
+ 17  long           21613 non-null  float64       
+ 18  sqft_living15  21613 non-null  int64         
+ 19  sqft_lot15     21613 non-null  int64         
+ 20  price          21613 non-null  float64       
+dtypes: datetime64[ns](1), float64(5), int64(15)
+memory usage: 3.5 MB
+None
+
+Generating univariate plots...
+python : D:\Pythoon 
+for 
+DataSCIENCES\Machine 
+learning\analyze_hous
+ing.py:75: 
+FutureWarning: 
+At line:1 char:1
++ python -u 
+analyze_housing.py > 
+output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (D:\Pyth   
+ oon for ...Futur    
+eWarning: :Strin    
+g) [], RemoteExc    
+eption
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+Passing `palette` 
+without assigning 
+`hue` is deprecated 
+and will be removed 
+in v0.14.0. Assign 
+the `x` variable to 
+`hue` and set 
+`legend=False` for 
+the same effect.
+
+  sns.countplot(x='be
+drooms', data=df, 
+palette='viridis')
+
+Generating bivariate plots...
+D:\Pythoon for 
+DataSCIENCES\Machine 
+learning\analyze_hous
+ing.py:97: 
+FutureWarning: 
+
+Passing `palette` 
+without assigning 
+`hue` is deprecated 
+and will be removed 
+in v0.14.0. Assign 
+the `x` variable to 
+`hue` and set 
+`legend=False` for 
+the same effect.
+
+  sns.boxplot(x='grad
+e', y='price', 
+data=df, 
+palette='coolwarm')
+
+Analysis complete. Visualizations saved to 'plots/' directory.
