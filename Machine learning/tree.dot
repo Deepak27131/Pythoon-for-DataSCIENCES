@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<InternetService_Fiber optic &le; 0.121<br/>gini = 0.392<br/>samples = 100.0%<br/>value = [0.732, 0.268]<br/>class = y<SUB>0</SUB>>, fillcolor="#eeaf81"] ;
+1 [label=<TotalCharges &le; -0.907<br/>gini = 0.244<br/>samples = 56.0%<br/>value = [0.857, 0.143]<br/>class = y<SUB>0</SUB>>, fillcolor="#e9965a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<OnlineSecurity_No internet service &le; 0.68<br/>gini = 0.46<br/>samples = 12.7%<br/>value = [0.641, 0.359]<br/>class = y<SUB>0</SUB>>, fillcolor="#f4c7a8"] ;
+1 -> 2 ;
+3 [label=<gini = 0.497<br/>samples = 6.0%<br/>value = [0.462, 0.538]<br/>class = y<SUB>1</SUB>>, fillcolor="#e3f1fb"] ;
+2 -> 3 ;
+4 [label=<gini = 0.318<br/>samples = 6.7%<br/>value = [0.802, 0.198]<br/>class = y<SUB>0</SUB>>, fillcolor="#eba06a"] ;
+2 -> 4 ;
+5 [label=<Contract_Two year &le; 0.605<br/>gini = 0.146<br/>samples = 43.3%<br/>value = [0.921, 0.079]<br/>class = y<SUB>0</SUB>>, fillcolor="#e78c4a"] ;
+1 -> 5 ;
+6 [label=<gini = 0.218<br/>samples = 25.9%<br/>value = [0.876, 0.124]<br/>class = y<SUB>0</SUB>>, fillcolor="#e99355"] ;
+5 -> 6 ;
+7 [label=<gini = 0.024<br/>samples = 17.4%<br/>value = [0.988, 0.012]<br/>class = y<SUB>0</SUB>>, fillcolor="#e5833b"] ;
+5 -> 7 ;
+8 [label=<TotalCharges &le; -0.327<br/>gini = 0.489<br/>samples = 44.0%<br/>value = [0.573, 0.427]<br/>class = y<SUB>0</SUB>>, fillcolor="#f8dfcc"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<TotalCharges &le; -0.953<br/>gini = 0.439<br/>samples = 16.3%<br/>value = [0.325, 0.675]<br/>class = y<SUB>1</SUB>>, fillcolor="#98ccf2"] ;
+8 -> 9 ;
+10 [label=<gini = 0.236<br/>samples = 3.3%<br/>value = [0.136, 0.864]<br/>class = y<SUB>1</SUB>>, fillcolor="#58ace9"] ;
+9 -> 10 ;
+11 [label=<gini = 0.468<br/>samples = 13.0%<br/>value = [0.373, 0.627]<br/>class = y<SUB>1</SUB>>, fillcolor="#afd7f4"] ;
+9 -> 11 ;
+12 [label=<Contract_Two year &le; 0.605<br/>gini = 0.403<br/>samples = 27.6%<br/>value = [0.72, 0.28]<br/>class = y<SUB>0</SUB>>, fillcolor="#efb286"] ;
+8 -> 12 ;
+13 [label=<gini = 0.446<br/>samples = 21.5%<br/>value = [0.664, 0.336]<br/>class = y<SUB>0</SUB>>, fillcolor="#f2c19d"] ;
+12 -> 13 ;
+14 [label=<gini = 0.152<br/>samples = 6.2%<br/>value = [0.917, 0.083]<br/>class = y<SUB>0</SUB>>, fillcolor="#e78c4b"] ;
+12 -> 14 ;
+}
